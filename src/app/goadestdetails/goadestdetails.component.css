@@ -1,0 +1,48 @@
+.container
+{
+    margin-top:50px;
+}
+
+.container-fluid
+{
+    background-image:url("/images/banner.jpg");
+    background-repeat: no-repeat;
+    height:300px;
+    
+}
+.m {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: rgb(110, 110, 158);
+    text-align: center;
+    
+  
+}
+
+ .m:after {
+    border-top: 2px solid rgb(110, 110, 158);
+    display: block;
+    width: 81px;
+    content: "";
+    margin: 8px auto 0;
+} 
+
+.card-product .img-wrap {
+    border-radius: 3px 3px 3px 3px;
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+ }
+    .card-product .img-wrap img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: cover; }
+      
+      .h {
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        font-size: 40px;
+        letter-spacing: 3px;
+        color: rgb(110, 110, 158);
+        
+    }

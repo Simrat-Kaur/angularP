@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 1550px 800px;
+  }
+  #signup .container #signup-row #signup-column #signup-box {
+    margin-top: 170px;
+    max-width: 600px;
+    height: 500px;
+    border: 1px solid #9C9C9C;
+    border-radius: 30px;
+    background-color: rgb(94, 82, 82,0.9);
+  }
+  #signup .container #signup-row #signup-column #signup-box #signup-form {
+    padding: 20px;
+  }
+ 
+   .text-color
+  {
+      color: #f5f5f5;
+      text-align: center;
+  }
+
+  .btn
+  {
+      background-color: grey;
+      color:#f5f5f5;
+  } 
+
+  .error
+  {
+    color:red;
+  }

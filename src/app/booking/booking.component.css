@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 2000px 800px;
+  }
+  #booking .container #booking-row #booking-column #booking-box {
+    margin-top: 130px;
+    max-width: 550px;
+    height: 580px;
+    border: 1px solid #9C9C9C;
+    border-radius: 30px;
+    background-color: rgb(94, 82, 82,0.9);
+  }
+  #booking .container #booking-row #booking-column #booking-box #booking-form {
+    padding: 20px;
+  }
+
+
+   .text-color
+  {
+      color: #f5f5f5;
+      text-align: center;
+  }
+
+  .btn
+  {
+      background-color: grey;
+      color:#f5f5f5;
+  } 
+
+  .error
+  {
+    color:red;
+  }
+
+  

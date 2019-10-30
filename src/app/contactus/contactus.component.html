@@ -1,0 +1,41 @@
+
+ <body background="images/tourism.jpg">
+	<div id="contact">
+		
+		<div class="container">
+			<div id="contact-row" class="row justify-content-center align-items-center">
+				<div id="contact-column" class="col-md-6">
+					<div id="contact-box" class="col-md-12">
+						<form id="contact-form" class="form" action="" method="post">
+							<h3 class="text-color">Get in Touch</h3><br/>
+							<input type="text" name="nm" placeholder="Name" [(ngModel)]="nm" maxlength="15" required pattern="^[a-zA-Z\s]+$" #txtnamee="ngModel" class="form-control">
+			<span class="error" *ngIf="txtnamee.touched && txtnamee.invalid && txtnamee.errors.required">Name field cannot be Empty</span>
+            <span class="error" *ngIf="txtnamee.touched && txtnamee.invalid && txtnamee.errors.pattern">Only alphabets are allowed</span><br/>
+              
+					
+			<input type="email" name="em" placeholder="Email Address" [(ngModel)]="un" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" #txtname="ngModel" class="form-control">
+			<span class="error" *ngIf="txtname.touched && txtname.invalid && txtname.errors.required">Email cannot be blank</span>
+            <span class="error" *ngIf="txtname.touched && txtname.invalid && txtname.errors.pattern">Enter proper email id</span><br/>
+       
+          
+          
+			<input type="text" name="no" placeholder="Telephone" [(ngModel)]="no" class="form-control" required pattern="^[6-9]\d{9}$" maxlength="10" #txtphone="ngModel" class="form-control">
+			<span class="error" *ngIf="txtphone.touched && txtphone.invalid && txtphone.errors.required">Phone cannot be blank</span>
+			<span class="error" *ngIf="txtphone.touched && txtphone.invalid && txtphone.errors.pattern">Phone Number starts with 6,7,8 or 9</span><br/>
+            
+				
+          
+			<textarea name="mess" placeholder="Message" required=""[(ngModel)]="mess" #txt="ngModel"class="form-control"> </textarea>
+			<span class="error" *ngIf="txt.touched && txt.invalid && txt.errors.required">This Field cannot be blank</span><br/>
+            
+					
+			<input type="submit" value="Submit" name="s1" (click)="onsubmit()" class="btn"><br/>
+			{{msg}}
+							
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

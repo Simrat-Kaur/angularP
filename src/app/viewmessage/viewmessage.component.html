@@ -1,0 +1,30 @@
+
+        <div>
+              <h2 class="heading">View Messages</h2>
+        </div>
+          
+              <div class="container">
+                  <table class="table table-striped">
+                      <thead>
+                          <tr>
+                              <th>Sr. No</th> 
+                              <th>Name</th>
+                              <th>Phone</th>	
+                              <th>Email</th>
+                              <th>Message</th>
+                              <th>Date/Time</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                      <tr class="rem1" *ngFor="let x of messages;let i=index">
+                          <td class="invert">{{i+1}}</td>
+                          <td class="invert">{{x.name}}</td>
+                          <td class="invert">{{x.phone}}</td>
+                          <td class="invert">{{x.email}}</td>
+                          <td class="invert">{{x.message}}</td>
+                          <td class="invert">{{x.date}}</td>
+                      </tr> 
+                    </tbody>
+                  </table>
+              </div>    
+      

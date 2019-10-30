@@ -1,0 +1,46 @@
+.container-fluid
+{
+    background-image:url("/images/banner.jpg");
+    background-repeat: no-repeat;
+    height:300px;
+    
+}
+
+.container
+{
+    margin-bottom: 120px;
+}
+
+
+.heading
+{
+
+    text-align: center;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size:50px;
+    letter-spacing: 2px;
+    color:  rgb(65, 84, 94);
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+
+
+.w
+{
+    font-family:  Script MT, Brush Script Std, cursive;
+    letter-spacing: 1px;
+    color:  rgb(69, 90, 100);
+}
+
+.a{
+    font-family:  Script MT, Brush Script Std, cursive;
+    letter-spacing: 1px;
+    color:  rgb(69, 90, 100);
+}
+
+.img-fluid
+{
+    border-radius: 20px;
+}
+

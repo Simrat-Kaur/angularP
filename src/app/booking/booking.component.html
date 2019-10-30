@@ -1,0 +1,53 @@
+          
+<body background="images/tourism.jpg">
+    <div id="booking">
+        
+        <div class="container">
+            <div id="booking-row" class="row justify-content-center align-items-center">
+                <div id="booking-column" class="col-md-6">
+                    <div id="booking-box" class="col-md-12">
+                        <form id="booking-form" class="form" action="" method="post">
+                            <h3 class="text-color">Booking</h3><br/>
+                            
+                            <input type="text" name="nm" placeholder="Name" [(ngModel)]="name" maxlength="15" required pattern="^[a-zA-Z\s]+$" #txtnamee="ngModel" class="form-control">
+                            <span class="error" *ngIf="txtnamee.touched && txtnamee.invalid && txtnamee.errors.required">Name field cannot be Empty</span>
+                            <span class="error" *ngIf="txtnamee.touched && txtnamee.invalid && txtnamee.errors.pattern">Only alphabets are allowed</span><br/>
+                                    
+                            <input type="text" name="ph" placeholder="Phone"[(ngModel)]="phone" required pattern="^[6-9]\d{9}$" maxlength="10" #txtphone="ngModel" class="form-control">
+                            <span class="error" *ngIf="txtphone.touched && txtphone.invalid && txtphone.errors.required">Phone Number cannot be blank</span>
+                            <span class="error" *ngIf="txtphone.touched && txtphone.invalid && txtphone.errors.pattern">Phone Number starts with 6,7,8 or 9</span><br/>
+                                    
+                                
+                            <input type="email" name="em" placeholder="Email Address(Username)"[(ngModel)]="un" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" #txtname="ngModel" class="form-control">
+                            <span class="error" *ngIf="txtname.touched && txtname.invalid && txtname.errors.required">Email cannot be blank</span>
+                            <span class="error" *ngIf="txtname.touched && txtname.invalid && txtname.errors.pattern">Enter proper email id</span><br/>
+
+                            <input type="number" name="num" placeholder="No. of persons"[(ngModel)]="pno" required="" #txtpno="ngModel" class="form-control">
+                            <span class="error" *ngIf="txtpno.touched && txtpno.invalid && txtpno.errors.required">This Field cannot be blank</span><hr>
+                              
+                            <label for="username" class="text-color">From:</label><br>
+                            <input type="date" name="date" placeholder="From" [(ngModel)]="from"required="" #txtfrom="ngModel" class="form-control">
+                            <span class="error" *ngIf="txtfrom.touched && txtfrom.invalid && txtfrom.errors.required">This field cannot be blank</span>
+
+                            <label for="username" class="text-color">To:</label><br>
+                            <input type="date" name="date1" placeholder="To" [(ngModel)]="to"required="" #txtto="ngModel" class="form-control">
+                            <span class="error" *ngIf="txtto.touched && txtto.invalid && txtto.errors.required"> This field cannot be blank</span><br/>
+                            
+                                    
+                           
+                            <div class="form-group">
+                               
+                                <input type="submit" name="s1" class="btn" value="Book" (click)="ons1click()">
+                                {{msg}}
+                            </div>
+                            
+                        
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+

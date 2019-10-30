@@ -1,0 +1,97 @@
+  #slideshow {
+  margin-top: 0px;
+  position: relative;
+  width: 1550px;
+  height: 380px;
+  padding: 0px;
+  
+} 
+
+ #slideshow > div {
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  right: -20px;
+  bottom: 0px;
+}   
+
+.container-fluid
+{
+  overflow: hidden;
+}
+
+.container
+{
+  margin-top: 50px;
+}
+
+  .card-product:after {
+    content: "";
+    display: table;
+    clear: both;
+    visibility: hidden; }
+  .card-product .price-new, .card-product .price {
+    margin-right: 5px; }
+  .card-product .price-old {
+    color: #999; }
+  .card-product .img-wrap {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+    text-align: center; }
+    .card-product .img-wrap img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: cover; }
+      
+      .card-product .info-wrap {
+    overflow: hidden;
+    padding: 15px;
+    border-top: 1px solid #eee; }
+  .card-product .action-wrap {
+    padding-top: 4px;
+    margin-top: 4px; }
+  .card-product .bottom-wrap {
+    padding: 15px;
+    border-top: 1px solid #eee; }
+  .card-product .title {
+    margin-top: 0; }
+
+    .btn
+    {
+      background-color: cadetblue;
+      border: cadetblue;
+    }
+
+ 
+
+  .m {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 50px;
+    letter-spacing: 3px;
+    color: rgb(110, 110, 158);
+    text-align: center;
+    
+  
+}
+
+ .m:after {
+    border-top: 2px solid rgb(110, 110, 158);
+    display: block;
+    width: 81px;
+    content: "";
+    margin: 8px auto 0;
+} 
+
+h6
+{
+  font-family: Georgia;
+  font-size: 15px;
+  color: rgb(110, 110, 158);
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+  
+
+}

@@ -1,0 +1,15 @@
+.navbar
+{
+    background-color: rgb(69, 90, 100);
+}
+.nav-link
+{
+   margin: 5px;
+}
+
+.navbar-brand
+{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
