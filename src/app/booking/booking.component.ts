@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./booking.component.css']
 })
 export class BookingComponent implements OnInit {
+  name:string;
+  msg:string;
 
   constructor() { }
 
@@ -22,7 +24,7 @@ export class BookingComponent implements OnInit {
 
   ons1click()
   {
-    alert("Thanks For Booking!");
+    
   }
 
 }
