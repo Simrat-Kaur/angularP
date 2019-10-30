@@ -14,6 +14,9 @@ import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { BookingComponent } from './booking/booking.component';
 import { DestinationsComponent } from './destinations/destinations.component';
 import { GoadestdetailsComponent } from './goadestdetails/goadestdetails.component';
+import { componentFactoryName } from '@angular/compiler';
+import { HimachaldestdetailsComponent } from './himachaldestdetails/himachaldestdetails.component';
+import { RajasthandestdetailsComponent } from './rajasthandestdetails/rajasthandestdetails.component';
 
 
 
@@ -75,6 +78,14 @@ const routes: Routes = [
     path:"goadestdetails",
     component:GoadestdetailsComponent
   },
+  {
+    path:"himachaldestdetails",
+    component:HimachaldestdetailsComponent
+  },
+  {
+    path:"rajasthandestdetails",
+    component:RajasthandestdetailsComponent
+  }
   
 ];
 

@@ -22,6 +22,7 @@ import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { GoadestdetailsComponent } from './goadestdetails/goadestdetails.component';
 import { DestinationsComponent } from './destinations/destinations.component';
 import { HimachaldestdetailsComponent } from './himachaldestdetails/himachaldestdetails.component';
+import { RajasthandestdetailsComponent } from './rajasthandestdetails/rajasthandestdetails.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { HimachaldestdetailsComponent } from './himachaldestdetails/himachaldest
     AdminhomeComponent,
     GoadestdetailsComponent,
     DestinationsComponent,
-    HimachaldestdetailsComponent
+    HimachaldestdetailsComponent,
+    RajasthandestdetailsComponent
   ],
   imports: [
     BrowserModule,
