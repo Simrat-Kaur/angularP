@@ -17,6 +17,9 @@ import { GoadestdetailsComponent } from './goadestdetails/goadestdetails.compone
 import { componentFactoryName } from '@angular/compiler';
 import { HimachaldestdetailsComponent } from './himachaldestdetails/himachaldestdetails.component';
 import { RajasthandestdetailsComponent } from './rajasthandestdetails/rajasthandestdetails.component';
+import { RajasthanpdetailsComponent } from './rajasthanpdetails/rajasthanpdetails.component';
+import { GoapdetailsComponent } from './goapdetails/goapdetails.component';
+import { HimachalpdetailsComponent } from './himachalpdetails/himachalpdetails.component';
 
 
 
@@ -85,7 +88,19 @@ const routes: Routes = [
   {
     path:"rajasthandestdetails",
     component:RajasthandestdetailsComponent
-  }
+  },
+  {
+    path:"rajasthanpdetails",
+    component:RajasthanpdetailsComponent
+  },
+  {
+    path:"goapdetails",
+    component:GoapdetailsComponent
+  },
+  {
+    path:"himachalpdetails",
+    component:HimachalpdetailsComponent
+  },
   
 ];
 

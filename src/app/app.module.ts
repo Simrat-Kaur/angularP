@@ -23,6 +23,9 @@ import { GoadestdetailsComponent } from './goadestdetails/goadestdetails.compone
 import { DestinationsComponent } from './destinations/destinations.component';
 import { HimachaldestdetailsComponent } from './himachaldestdetails/himachaldestdetails.component';
 import { RajasthandestdetailsComponent } from './rajasthandestdetails/rajasthandestdetails.component';
+import { GoapdetailsComponent } from './goapdetails/goapdetails.component';
+import { HimachalpdetailsComponent } from './himachalpdetails/himachalpdetails.component';
+import { RajasthanpdetailsComponent } from './rajasthanpdetails/rajasthanpdetails.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,10 @@ import { RajasthandestdetailsComponent } from './rajasthandestdetails/rajasthand
     GoadestdetailsComponent,
     DestinationsComponent,
     HimachaldestdetailsComponent,
-    RajasthandestdetailsComponent
+    RajasthandestdetailsComponent,
+    GoapdetailsComponent,
+    HimachalpdetailsComponent,
+    RajasthanpdetailsComponent
   ],
   imports: [
     BrowserModule,

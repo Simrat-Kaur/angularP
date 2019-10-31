@@ -20,6 +20,14 @@
     text-align: center;
   
 }
+
+.m:after {
+  border-top: 2px solid rgb(110, 110, 158);
+  display: block;
+  width: 81px;
+  content: "";
+  margin: 8px auto 0;
+}
 .card-product:after {
     content: "";
     display: table;
