@@ -1,0 +1,31 @@
+#slideshow {
+    margin-top: 0px;
+    position: relative;
+    width: 1550px;
+    height: 380px;
+    padding: 0px;
+    
+  } 
+  
+   #slideshow > div {
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    right: -20px;
+    bottom: 0px;
+  }   
+  
+  .container-fluid
+  {
+    overflow: hidden;
+  }
+  
+  .m {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 80px;
+    letter-spacing: 3px;
+    color: rgb(110, 110, 158);
+    text-align: center;
+    margin-top:100px;
+    margin-bottom: 100px; 
+}
