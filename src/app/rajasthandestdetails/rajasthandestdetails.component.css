@@ -55,4 +55,9 @@
     .c
     {
         background-color:rgb(244, 244, 248);
+        border-radius: 20px;
     }
+    img:hover
+{
+    opacity: 0.7;
+}  
