@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -15,7 +16,7 @@ export class SignupComponent implements OnInit {
   cpass:string;
   msg:string;
 
-  constructor(private myhttp:HttpClient) { }
+  constructor(private myhttp:HttpClient,private myrouter:Router) { }
 
   ngOnInit() {
     $(document).ready(function(){
@@ -30,18 +31,25 @@ export class SignupComponent implements OnInit {
   }
   ons1click()
   {
+    if(this.name==null || this.phone==null || this.gender==null || this.un==null || this.pass==null || this.cpass==null)
+    {
+      alert("Please Fill all the required Fields");
+    }
+    else
+    {
     if(this.pass==this.cpass)
     {
     var vals={nm:this.name,ph:this.phone,gen:this.gender,uname:this.un,pass:this.pass,utype:'admin'};
     this.myhttp.post("http://localhost:3000/api/signup",vals,{responseType:"text"}).subscribe(
       (response)=>
       {
-        this.msg=response;
+        alert("Signup Successfull")
+        this.myrouter.navigateByUrl('sitehome');
         //this.clearfields();
       },
       (error)=>
       {
-        this.msg=error;
+        alert(error);
       }
     )
     }
@@ -49,6 +57,7 @@ export class SignupComponent implements OnInit {
     {
       this.msg="Passwords Do not match";
     }
+  }
     
   }
 

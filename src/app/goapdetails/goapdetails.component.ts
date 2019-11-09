@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-goapdetails',
@@ -6,10 +7,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./goapdetails.component.css']
 })
 export class GoapdetailsComponent implements OnInit {
+  uname:String;
 
-  constructor() { }
+
+  constructor(private myrouter:Router) { }
 
   ngOnInit() {
+    
+      
+  }
+
+  ons1click()
+  {
+    this.uname=sessionStorage.getItem("uname");
+    if(this.uname==null)
+    {
+      alert("Please login to website");
+    }
+    else
+    {
+      this.myrouter.navigateByUrl('/booking');
+    }
+  
   }
 
 }

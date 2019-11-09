@@ -11,7 +11,6 @@ export class ContactusComponent implements OnInit {
   un:string;
   no:string;
   mess:string;
-  msg:string;
   uname: string;
 
   constructor(private myhttp:HttpClient) { }
@@ -32,7 +31,7 @@ export class ContactusComponent implements OnInit {
     this.uname=sessionStorage.getItem("uname");
     if(this.uname==null)
     {
-      this.msg="Please login to website ";
+      alert("Please login to website");
     }
     else
     {
@@ -40,11 +39,11 @@ export class ContactusComponent implements OnInit {
     this.myhttp.post("http://localhost:3000/api/contactus",vals,{responseType:"text"}).subscribe(
       (response)=>
       {
-        this.msg=response;
+        alert(response);
       },
       (error)=>
       {
-        this.msg=error;
+        alert(error);
       }
     )
     

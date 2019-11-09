@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  uname:String;
 
-  constructor() { }
+  constructor(private myrouter:Router) { }
 
   ngOnInit() {
     $("#slideshow > div:gt(0)").hide();
@@ -20,6 +22,20 @@ setInterval(function() {
     .end()
     .appendTo('#slideshow');
 }, 2000);
+  }
+
+  ons1click()
+  {
+    this.uname=sessionStorage.getItem("uname");
+    if(this.uname==null)
+    {
+      alert("Please login to website");
+    }
+    else
+    {
+      this.myrouter.navigateByUrl('/booking');
+    }
+  
   }
 
 }
