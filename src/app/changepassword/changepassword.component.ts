@@ -19,6 +19,12 @@ export class ChangepasswordComponent implements OnInit {
   }
   onchangepass()
   {
+    if(this.currp==null ||this.newp==null||this.cnewp==null)
+    {
+      alert("Please Fill the Required Fields");
+    }
+    else
+    {
     if(this.newp==this.cnewp)
     {
     var params={un:sessionStorage.getItem("uname"),cpass:this.currp,newp:this.newp};
@@ -49,6 +55,6 @@ export class ChangepasswordComponent implements OnInit {
 
   }
 }
-
+  }
 
 }

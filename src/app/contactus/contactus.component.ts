@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contactus',
@@ -13,7 +14,7 @@ export class ContactusComponent implements OnInit {
   mess:string;
   uname: string;
 
-  constructor(private myhttp:HttpClient) { }
+  constructor(private myhttp:HttpClient,private myrouter:Router) { }
 
   ngOnInit() {
     $(document).ready(function(){
@@ -35,11 +36,18 @@ export class ContactusComponent implements OnInit {
     }
     else
     {
+      if(this.nm==null || this.un==null ||this.no==null ||this.mess==null)
+      {
+        alert("Please Fill all the required Fields");
+      }
+      else{
     var vals={name:this.nm,phone:this.no,email:this.un,message:this.mess};
     this.myhttp.post("http://localhost:3000/api/contactus",vals,{responseType:"text"}).subscribe(
       (response)=>
       {
         alert(response);
+        window.location.reload();
+        
       },
       (error)=>
       {
@@ -48,6 +56,11 @@ export class ContactusComponent implements OnInit {
     )
     
   }
+}
+}
+clearfields()
+{
+  this.nm=null;
 }
 
 }

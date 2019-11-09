@@ -28,6 +28,11 @@ export class LoginComponent implements OnInit {
 
   onlogin()
   {
+    if(this.un==null || this.pass==null)
+    {
+      alert("Please Fill the Required Fields");
+    }
+    else{
     var params={un:this.un,pass:this.pass};
     this.myhttp.post("http://localhost:3000/api/login",params,{responseType:"json"}).subscribe(
       (response:any[])=>
@@ -50,15 +55,17 @@ export class LoginComponent implements OnInit {
         }
         else
         {
-          this.msg="Incorrect Username/Password";
+          alert("Incorrect Username/Password");
         }
+      
       },
       (error)=>
       {
-        this.msg=error;
+        alert(error);
       }
       
     )
   }
+}
 
 }

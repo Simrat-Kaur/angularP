@@ -44,8 +44,7 @@ export class SignupComponent implements OnInit {
       (response)=>
       {
         alert("Signup Successfull")
-        this.myrouter.navigateByUrl('sitehome');
-        //this.clearfields();
+        window.location.reload();
       },
       (error)=>
       {
@@ -61,16 +60,6 @@ export class SignupComponent implements OnInit {
     
   }
 
-  clearfields()
-  {
-    this.name=null;
-    this.phone=null;
-    this.gender=null;
-    this.un=null;
-    this.pass=null;
-    this.cpass=null;
-
-  }
 
 }
 
