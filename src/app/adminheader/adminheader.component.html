@@ -1,39 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Tripism</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li><a routerLink="#">Welcome {{name}}</a></li>
-      <li class="active"><a href="#">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" routerLink="#">View<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a routerLink="#">List of users</a></li>
-          <li><a routerLink="#">User messages</a></li>
-        </ul>
-      </li>
-      <li><a routerLink="/memberlist">List of users</a></li>
-      <li><a routerLink="/viewmessage">User messages</a></li>
-      <li *ngIf="visibility"><a routerLink="login.html">Login</a></li>
-      <li *ngIf="visibility"><a routerLink="signup.html">Sign up</a></li>
-      <li *ngIf="!visibility"><a routerLink="/changepassword">Change Password</a></li>
-      <li *ngIf="!visibility"><a routerLink="logout.html"(click)="onlogout()">Logout</a></li>
-    </ul>
-  </div>
-</nav>
-  
-
-</body>
-</html> -->
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
@@ -67,7 +32,7 @@
           <a class="nav-link" routerLink="changepassword">Change Password</a>
         </li>
         <li class="nav-item" *ngIf="!visibility">
-          <a class="nav-link" routerLink="login.html"(click)="onlogout()">Logout</a>
+          <a class="nav-link" routerLink="/sitehome"(click)="onlogout()">Logout</a>
         </li>
         
       </ul>

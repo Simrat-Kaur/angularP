@@ -36,7 +36,7 @@ export class AdminheaderComponent implements OnInit {
   onlogout()
   {
     sessionStorage.clear();
-    this.myrouter.navigateByUrl('login.html');
+    this.myrouter.navigateByUrl('/sitehome');
   }
 
 }

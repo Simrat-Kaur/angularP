@@ -40,9 +40,6 @@ body {
       border:2px solid rgb(223, 87, 87);
   }
   
-  input.ng-valid.ng-touched
-  {
-      border:2px solid green;
-  }
+ 
 
   

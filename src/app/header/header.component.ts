@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,10 +7,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  visibility:boolean;
+  
   name:string;
+  visibility:boolean;
 
-  constructor(private myrouter:Router) { }
+  constructor(private myrouter:Router) {
+    myrouter.events.subscribe(event=>
+      {
+        if(event instanceof NavigationEnd)
+        {
+          this.ngOnInit();
+        }
+      })
+   }
 
   ngOnInit() {
     console.log("ngOninit running of header");
@@ -24,12 +33,12 @@ export class HeaderComponent implements OnInit {
        this.name="Guest";
        this.visibility=true;
     }
-   // this.fetchcat();
   }
-  onlogout()
+  onlogout1()
   {
     sessionStorage.clear();
-    this.myrouter.navigateByUrl('login.html');
+    this.myrouter.navigateByUrl('/sitehome');
+    this.ngOnInit();
   }
 
 }

@@ -25,15 +25,15 @@
                                         <span class="error" *ngIf="txtname.touched && txtname.invalid && txtname.errors.required">Email cannot be blank</span>
                                         <span class="error" *ngIf="txtname.touched && txtname.invalid && txtname.errors.pattern">Enter proper email id</span><br/>
                                                 
-                                        <input type="password" name="pass" placeholder="Password" [(ngModel)]="pass"required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$" #txtpass="ngModel" class="form-control">
+                                        <input type="password" name="pass" placeholder="Password" [(ngModel)]="pass" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$" #txtpass="ngModel" class="form-control">
                                         <span class="error" *ngIf="txtpass.touched && txtpass.invalid && txtpass.errors.required">Password cannot be blank</span>
                                         <span class="error" *ngIf="txtpass.touched && txtpass.invalid && txtpass.errors.pattern">Password must at least 4 Characters,no more than 8 charcters,at least one uppercase and lowercase letter</span><br/>
                                                 
                                         <input type="password" name="cpass" placeholder="Password Confirmation" required=""[(ngModel)]="cpass" #txtcpass="ngModel" class="form-control">
-                                        <span class="error" *ngIf="txtpass.touched && txtpass.invalid && txtpass.errors.required">Confirm Password cannot be blank</span><br/>
+                                        <span class="error" *ngIf="txtcpass.touched && txtcpass.invalid && txtcpass.errors.required">Confirm Password cannot be blank</span><br/>
                                         <div class="form-group">
                                            
-                                            <input type="submit" name="s1" class="btn" value="signup" (click)="ons1click()">
+                                            <input type="submit" name="s1" class="btn" value="Signup" (click)="ons1click()">
                                            
                                         </div>
                                     </form>

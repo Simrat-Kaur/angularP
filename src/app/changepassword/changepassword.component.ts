@@ -16,6 +16,16 @@ export class ChangepasswordComponent implements OnInit {
   constructor(private myhttp:HttpClient,private myrouter:Router) { }
 
   ngOnInit() {
+    $(document).ready(function(){
+      $(".btn").mouseover(function(){
+        $(".btn").css("background-color", "yellow");
+        $(".btn").css("color", "gray");
+      });
+      $(".btn").mouseout(function(){
+        $(".btn").css("background-color", "gray");
+        $(".btn").css("color", "white");
+      });
+    });
   }
   onchangepass()
   {

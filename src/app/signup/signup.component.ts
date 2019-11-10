@@ -22,9 +22,11 @@ export class SignupComponent implements OnInit {
     $(document).ready(function(){
       $(".btn").mouseover(function(){
         $(".btn").css("background-color", "yellow");
+        $(".btn").css("color", "gray");
       });
       $(".btn").mouseout(function(){
         $(".btn").css("background-color", "gray");
+        $(".btn").css("color", "white");
       });
     });
   
@@ -39,7 +41,7 @@ export class SignupComponent implements OnInit {
     {
     if(this.pass==this.cpass)
     {
-    var vals={nm:this.name,ph:this.phone,gen:this.gender,uname:this.un,pass:this.pass,utype:'admin'};
+    var vals={nm:this.name,ph:this.phone,gen:this.gender,uname:this.un,pass:this.pass,utype:'normal'};
     this.myhttp.post("http://localhost:3000/api/signup",vals,{responseType:"text"}).subscribe(
       (response)=>
       {
@@ -54,7 +56,7 @@ export class SignupComponent implements OnInit {
     }
     else
     {
-      this.msg="Passwords Do not match";
+      alert("Passwords Do not match");
     }
   }
     

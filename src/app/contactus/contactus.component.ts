@@ -20,9 +20,11 @@ export class ContactusComponent implements OnInit {
     $(document).ready(function(){
       $(".btn").mouseover(function(){
         $(".btn").css("background-color", "yellow");
+        $(".btn").css("color", "gray");
       });
       $(".btn").mouseout(function(){
         $(".btn").css("background-color", "gray");
+        $(".btn").css("color", "white");
       });
     });
   
