@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-size: 2000px 800px;
   }
-  #booking .container #booking-row #booking-column #booking-box {
+  #booking-box {
     margin-top: 130px;
     max-width: 550px;
     height: 580px;
@@ -13,7 +13,7 @@ body {
     border-radius: 30px;
     background-color: rgb(94, 82, 82,0.9);
   }
-  #booking .container #booking-row #booking-column #booking-box #booking-form {
+  #booking-form {
     padding: 20px;
   }
 

@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-size: 1550px 800px;
   }
-  #login .container #login-row #login-column #login-box {
+   #login-box {
     margin-top: 250px;
     max-width: 550px;
     height: 325px;
@@ -13,7 +13,7 @@ body {
     border-radius: 30px;
     background-color: rgb(94, 82, 82,0.9);
   }
-  #login .container #login-row #login-column #login-box #login-form {
+   #login-form {
     padding: 20px;
   }
 

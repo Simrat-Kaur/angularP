@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-size: 1550px 800px;
   }
-  #contact .container #contact-row #contact-column #contact-box {
+   #contact-box {
     margin-top: 180px;
     max-width: 600px;
     height: 420px;
@@ -13,7 +13,7 @@ body {
     border-radius: 30px;
     background-color: rgb(94, 82, 82,0.9);
   }
-  #contact .container #contact-row #contact-column #contact-box #contact-form {
+   #contact-form {
     padding: 20px;
   }
 

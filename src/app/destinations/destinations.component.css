@@ -28,38 +28,42 @@
   content: "";
   margin: 8px auto 0;
 }
-.card-product:after {
-    content: "";
-    display: table;
-    clear: both;
-    visibility: hidden; }
-  .card-product .price-new, .card-product .price {
-    margin-right: 5px; }
-  .card-product .price-old {
-    color: #999; }
-  .card-product .img-wrap {
+
+ .price-new
+  {
+    margin-right: 5px;
+   }
+ .price-old {
+    color: #999; 
+  }
+ 
+  .img-wrap {
     border-radius: 3px 3px 0 0;
     overflow: hidden;
     position: relative;
     height: 220px;
-    text-align: center; }
-    .card-product .img-wrap img {
+    text-align: center; 
+  }
+   
+   img {
       max-height: 100%;
       max-width: 100%;
       object-fit: cover; }
       
-      .card-product .info-wrap {
+  
+      
+.info-wrap
+ {
     overflow: hidden;
     padding: 15px;
-    border-top: 1px solid #eee; }
-  .card-product .action-wrap {
+    border-top: 1px solid #eee;
+   }
+ 
+   .action-wrap {
     padding-top: 4px;
-    margin-top: 10px; }
-  .card-product .bottom-wrap {
-    padding: 15px;
-    border-top: 1px solid #eee; }
-  .card-product .title {
-    margin-top: 0; }
+    margin-top: 10px;
+   }
+  
 
   h6
 {
